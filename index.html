@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A personal Poke2D Arena rebuild. Play local arena battles, build your team, and open the official online game.">
+  <meta name="theme-color" content="#18386e">
+  <title>Poke2D Arena · Community Build</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preload" href="./assets/fonts/Silkscreen-Bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="./assets/arena.png" as="image">
+  <script src="./site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="site-nav">
+    <a class="brand" href="./"><span class="brand-icon" aria-hidden="true"></span>Poke2D Arena</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">☰</button>
+    <nav id="primary-nav" aria-label="Primary"><a href="./play-online/">Play</a><a href="./guides/">Guides</a><a href="./release-date/">Release Date</a><a href="./about/">About</a></nav>
+  </div></header>
+  <main id="main">
+    <section class="home-hero" aria-labelledby="home-title">
+      <div class="arena-scene" aria-hidden="true">
+        <div class="wordmark"><strong>POKE2D</strong><strong>ARENA</strong><span>REAL-TIME ARENA</span><small>Unofficial fan game · Community build</small></div>
+        <div class="pokemon-formation">
+          <img src="./assets/sprites/25.png" alt=""><img src="./assets/sprites/143.png" alt=""><img src="./assets/sprites/149.png" alt=""><img src="./assets/sprites/9.png" alt=""><img src="./assets/sprites/94.png" alt=""><img src="./assets/sprites/6.png" alt=""><img src="./assets/sprites/448.png" alt=""><img src="./assets/sprites/3.png" alt=""><img src="./assets/sprites/65.png" alt="">
+        </div>
+      </div>
+      <div class="hero-panel">
+        <p class="eyebrow">Free browser game · Jump into battle</p>
+        <h1 id="home-title"><small>Pokemon Arena 2D</small>Your team.<br>Your arena.</h1>
+        <p>Choose your three Pokémon and take the field. Dodge, aim and switch your way through a real-time battle.</p>
+        <div class="hero-actions"><a class="button primary" href="./play-online/">▶ Play now</a><a href="./guides/">How to play</a></div>
+        <nav class="hero-modes" aria-label="Game modes"><a href="./play-online/?mode=quick">Quick Battle</a><a href="./play-online/?mode=cpu">Vs CPU</a><a href="./play-online/?mode=story">Story Mode</a><a href="./play-online/?mode=teams">Your Teams</a><a href="./play-online/?mode=online">Online</a></nav>
+        <div class="hero-meta"><span>Keyboard &amp; mouse · Touch</span><a href="./play-online/" target="_blank" rel="noopener">Open in a new tab ↗</a></div>
+      </div>
+    </section>
+    <div class="main-shell">
+      <section class="content-card overview"><p class="eyebrow">Real-time 2D battles · Browser edition</p><a class="button primary" href="./play-online/">▶ Enter the arena</a><p>Build a trio from 1,025 Pokémon. Your teams and local progress save in this browser.</p></section>
+      <section class="content-card"><h2>At a glance</h2><div class="spec-grid">
+        <article><span>Your team</span><strong>3 Pokémon</strong><small>Switch during the fight</small></article>
+        <article><span>Computer opponents</span><strong>3 difficulties</strong><small>Easy, Normal and Hard</small></article>
+        <article><span>Matchups</span><strong>18 types</strong><small>Find your advantage</small></article>
+        <article><span>Settings</span><strong>6 arenas</strong><small>Pick your battlefield</small></article>
+        <article><span>Combat</span><strong>Real-time</strong><small>Move, aim and dodge</small></article>
+        <article><span>Your collection</span><strong>1,025 species</strong><small>Search the full roster</small></article>
+      </div></section>
+      <section class="content-card"><h2>Make every switch count</h2><div class="feature-grid">
+        <article><div class="feature-image"><img src="./assets/sprites/6.png" alt="Charizard"><img src="./assets/sprites/9.png" alt="Blastoise"></div><h3>Take direct control</h3><p>Keep moving, aim your next attack and dash clear of incoming fire. Build charge for your ultimate.</p><a href="./play-online/?mode=quick">Start a quick battle →</a></article>
+        <article><div class="feature-image"><img src="./assets/sprites/25.png" alt="Pikachu"><img src="./assets/sprites/3.png" alt="Venusaur"><img src="./assets/sprites/448.png" alt="Lucario"></div><h3>Build your trio</h3><p>Find favorites by name, number or type. Keep three teams ready and export a backup of your local save.</p><a href="./play-online/?mode=teams">Open your teams →</a></article>
+        <article><div class="feature-image"><img src="./assets/sprites/149.png" alt="Dragonite"><img src="./assets/sprites/94.png" alt="Gengar"></div><h3>Challenge a friend</h3><p>Online opens the official game, where you can create or join its live multiplayer rooms.</p><a href="./play-online/?mode=online">Go to Online →</a></article>
+      </div></section>
+      <section class="content-card"><h2>Choose your next battle</h2><div class="modes-grid">
+        <a class="mode-card" href="./play-online/?mode=quick"><h3>Quick Battle</h3><p>Your saved trio against a fresh computer team.</p></a>
+        <a class="mode-card" href="./play-online/?mode=cpu"><h3>Vs CPU</h3><p>Set the difficulty and arena before you fight.</p></a>
+        <a class="mode-card" href="./play-online/?mode=story"><h3>Story Mode</h3><p>Climb sixteen original local challenge stages.</p></a>
+        <a class="mode-card" href="./play-online/?mode=teams"><h3>Your Teams</h3><p>Choose a lineup and browse the Pokédex.</p></a>
+        <a class="mode-card" href="./play-online/?mode=online"><h3>Online</h3><p>Open the official client and its live rooms.</p></a>
+        <a class="mode-card" href="./play-online/?mode=settings"><h3>Settings &amp; saves</h3><p>Adjust controls, effects and sound. Back up your progress.</p></a>
+      </div></section>
+      <section class="content-card"><h2>Before you battle</h2>
+        <details open><summary>How do I move and attack?</summary><p>Move with WASD or the arrow keys and aim with the mouse. Left click fires your basic attack. Right click uses your second skill. Space dashes, Q uses your heavy attack, and E activates your ultimate. Switch with R or 1–3. Touch controls appear on phones.</p></details>
+        <details><summary>Where is my progress saved?</summary><p>Your teams, settings and challenge progress stay in this browser. Use Export save in Settings to make a backup or move your local progress to another device.</p></details>
+        <details><summary>How does Online work here?</summary><p>The Online screen opens poke2darena.com for multiplayer. Its server currently accepts the official site's domain. Your teams and saves on this community build are separate from your official game progress.</p></details>
+        <details><summary>Who made this version?</summary><p>This is an independently implemented community rebuild with original local battle mechanics and arena artwork. Poke2D Arena is developed by alex at poke2darena.com. Pokémon belongs to its respective rights holders.</p><a href="./about/">About this build →</a></details>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer"><a class="brand" href="./">Poke2D Arena</a><p>Independent community build. Pokémon names and characters belong to Nintendo, Creatures Inc., GAME FREAK and The Pokémon Company. Original game by poke2darena.com.</p><nav><a href="./play-online/">Play</a><a href="./guides/">Guides</a><a href="./release-date/">Updates</a><a href="./about/">About &amp; credits</a><a href="https://poke2darena.com/">Official site ↗</a></nav></footer>
+</body>
+</html>

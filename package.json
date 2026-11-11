@@ -1,0 +1,15 @@
+{
+  "name": "poke2d-community-client",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "linkedom": "^0.18.15"
+  }
+}

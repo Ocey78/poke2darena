@@ -1,0 +1,272 @@
+.info-main {
+  width: min(1100px, calc(100% - 40px));
+  margin: 40px auto 64px;
+}
+
+.info-intro {
+  margin-bottom: 30px;
+  max-width: 790px;
+}
+
+.info-intro h1 {
+  margin: 10px 0 16px;
+  font-size: clamp(26px, 4vw, 42px);
+  line-height: 1.3;
+}
+
+.info-intro p,
+.info-panel p,
+.guide-card p,
+.update-item p {
+  color: #d6e5f7;
+  line-height: 1.75;
+}
+
+.info-breadcrumb {
+  display: inline-block;
+  color: #88c8ff;
+  font-size: 14px;
+}
+
+.info-breadcrumb:hover,
+.info-source:hover {
+  color: #f8d030;
+  text-decoration: underline;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.guide-grid li {
+  display: flex;
+}
+
+.guide-card,
+.info-panel {
+  border: 2px solid #729dce;
+  background: #102848;
+  box-shadow: 4px 4px 0 #030b16;
+}
+
+.guide-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 24px;
+  color: #f8f8f8;
+  text-decoration: none;
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.guide-card:hover {
+  border-color: #f8d030;
+  background: #15365e;
+}
+
+.guide-card h2,
+.info-panel h2,
+.update-item h3 {
+  margin: 0 0 12px;
+  color: #f8d030;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.info-intro h1,
+.info-panel h2,
+.official-guide-intro h2 {
+  font-family: var(--pixel, monospace);
+}
+
+.official-guide-intro {
+  margin-top: 36px;
+}
+
+.controls-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 32px;
+  margin: 0;
+}
+
+.controls-list div {
+  padding: 10px 0;
+  border-bottom: 1px solid #345575;
+}
+
+.controls-list dt {
+  font-weight: 700;
+  color: #f8f8f8;
+}
+
+.controls-list dd {
+  margin: 0;
+  color: #d6e5f7;
+}
+
+.credits-list {
+  padding-left: 22px;
+  color: #d6e5f7;
+}
+
+.credits-list li {
+  margin: 12px 0;
+}
+
+.guide-card p {
+  margin: 0 0 20px;
+}
+
+.guide-link-label {
+  margin-top: auto;
+  color: #88c8ff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.info-source {
+  color: #88c8ff;
+  text-underline-offset: 4px;
+}
+
+.info-source-note {
+  margin: 25px 0 0;
+  color: #a9bdd7;
+  font-size: 14px;
+}
+
+.info-stack {
+  display: grid;
+  gap: 24px;
+}
+
+.info-panel {
+  padding: 28px;
+}
+
+.info-panel p:last-child {
+  margin-bottom: 0;
+}
+
+.release-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0;
+}
+
+.release-facts div {
+  padding: 18px 0;
+}
+
+.release-facts dt {
+  margin-bottom: 8px;
+  color: #a9bdd7;
+  font-size: 14px;
+}
+
+.release-facts dd {
+  margin: 0;
+  font-size: 18px;
+  color: #f8f8f8;
+  font-weight: 700;
+}
+
+.update-list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.update-item {
+  padding: 26px 0;
+  border-bottom: 1px solid #345575;
+}
+
+.update-item:first-child {
+  padding-top: 0;
+}
+
+.update-item:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.update-item time {
+  display: block;
+  margin-bottom: 8px;
+  color: #88c8ff;
+  font-size: 14px;
+}
+
+.update-item p {
+  margin: 0;
+}
+
+.info-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.info-play-link {
+  display: inline-flex;
+  padding: 11px 18px;
+  border: 2px solid #fff0a1;
+  background: #f8d030;
+  box-shadow: 3px 3px 0 #030b16;
+  color: #081424;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.info-play-link:hover {
+  background: #ffe67a;
+}
+
+.info-main a:focus-visible {
+  outline: 3px solid #f8d030;
+  outline-offset: 5px;
+}
+
+@media (max-width: 650px) {
+  .info-main {
+    width: calc(100% - 28px);
+    margin-top: 28px;
+  }
+
+  .guide-grid,
+  .release-facts,
+  .controls-list {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-card,
+  .info-panel {
+    padding: 20px;
+  }
+
+  .release-facts {
+    gap: 0;
+  }
+
+  .release-facts div {
+    padding: 12px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .guide-card {
+    transition: none;
+  }
+}
